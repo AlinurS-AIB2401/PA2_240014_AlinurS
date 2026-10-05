@@ -105,12 +105,12 @@ function main() {
     ...pA, ...pE, ...pF
   ];
 
-  // Back L-face (z = -0.5): 4 triangles wound for opposite facing = 12 vertices
+  // Back L-face (z = -0.5): 4 triangles fanning from pA2 wound for -z normal = 12 vertices
   const stairBack = [
-    ...pB2, ...pA2, ...pF2,
-    ...pB2, ...pF2, ...pE2,
-    ...pB2, ...pE2, ...pD2,
-    ...pB2, ...pD2, ...pC2
+    ...pA2, ...pC2, ...pB2,
+    ...pA2, ...pD2, ...pC2,
+    ...pA2, ...pE2, ...pD2,
+    ...pA2, ...pF2, ...pE2
   ];
 
   // 6 side rectangular faces (2 triangles each = 6 vertices each, total 36 verts)
